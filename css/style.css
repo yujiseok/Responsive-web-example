@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+:root {
+  --primary-color: #047aed;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* navbar */
+.navbar {
+  background-color: var(--primary-color);
+  color: #fff;
+  height: 70px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar a {
+  color: #fff;
+  padding-bottom: 10px;
+}
+
+.navbar a::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #fff;
+  transform: scaleX(0);
+  transition: transform 0.25s ease-in-out;
+  transform-origin: 0% 50%;
+}
+
+.navbar a:hover::after {
+  transform: scaleX(1);
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+/* showcase */
+.showcase {
+  height: 400px;
+  background-color: var(--primary-color);
+  color: #fff;
+  position: relative;
+}
+
+.showcase .grid {
+  grid-template-columns: 55% 45%;
+  gap: 1.875rem;
+}
+
+.showcase h1 {
+  font-size: 2.5rem;
+}
+
+.showcase p {
+  margin: 1.25rem 0;
+}
+
+.showcase-form {
+  position: relative;
+  top: 60px;
+  height: 350px;
+  width: 400px;
+  padding: 2.5rem;
+  z-index: 100;
+  justify-self: end;
+}
+
+.showcase-form .form-control {
+  margin: 1.875rem 0;
+}
+
+.showcase-form input[type="text"],
+.showcase-form input[type="email"] {
+  border: 0;
+  border-bottom: 1px solid #b4becb;
+  width: 100%;
+  padding: 3px;
+  font-size: 1rem;
+}
+
+.showcase-form input:focus {
+  outline: none;
+}
+
+/* util */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  /* overflow: auto; */
+  padding: 0 2.5em;
+}
+
+.card {
+  background-color: whitesmoke;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 1.25rem;
+  margin: 0.625rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.625rem 1.875rem;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.25rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
