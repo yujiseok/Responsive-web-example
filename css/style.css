@@ -123,6 +123,18 @@ img {
   outline: none;
 }
 
+.showcase::before,
+.showcase::after {
+  content: "";
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  transform: skewY(-3deg);
+}
+
 /* util */
 .container {
   max-width: 1200px;
