@@ -135,54 +135,16 @@ img {
   transform: skewY(-3deg);
 }
 
-/* util */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  /* overflow: auto; */
-  padding: 0 2.5em;
+/* stats */
+.stats {
+  padding-top: 6.25rem;
 }
 
-.card {
-  background-color: whitesmoke;
-  color: #333;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-  padding: 1.25rem;
-  margin: 0.625rem;
+.stats-heading {
+  max-width: 500px;
+  margin: auto;
 }
 
-.btn {
-  display: inline-block;
-  padding: 0.625rem 1.875rem;
-  cursor: pointer;
-  background: var(--primary-color);
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-}
-
-.btn-outline {
-  background-color: transparent;
-  border: 1px solid #fff;
-}
-
-.btn:hover {
-  transform: scale(0.98);
-}
-
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 1.25rem;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+.stats .grid h3 {
+  font-size: 2rem;
 }
